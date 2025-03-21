@@ -1,0 +1,342 @@
+/* google font variable font, this is the default and then for any variation, you change it directly in the css for that element. An example of this can be seen in the logo below */
+.league-spartan-font {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Header, split into sections */
+#header-left {
+  word-spacing: 1.5rem;
+  float: left;
+  width: 20%;
+  padding-top: 3rem;
+}
+
+#header-right {
+float: right;
+width: 59%;
+text-align: right;
+word-spacing: 2rem;
+}
+
+/* Styling for main body */
+
+.want-pup {
+padding-top: 2rem;
+padding-bottom: 2rem;
+}
+
+#look-dog {
+padding-top: 2rem;
+padding-bottom: 2rem;
+}
+
+#logo {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  text-align: right;
+}
+
+#logo:hover {
+  color: #8D4C30;
+}
+
+h1:hover {
+  color: #8D4C30;
+}
+
+body {
+    padding: 10px;
+    font-family: "League Spartan", sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+.look-dog {
+  background-image: url("./imgs/website-banner1.jpg") ;
+  background-color: #cccccc;
+  background-size: cover;
+  background-position-x: center; 
+  padding:1rem;
+  text-align: right;
+}
+
+.bones {
+  background-image: url("./imgs/bones.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding:10px;
+  overflow:hidden
+}
+
+.bones div {
+  padding:2rem 5%;
+}
+
+/* Navigation bar */
+nav {
+  list-style: none;
+  overflow: hidden;
+  text-align: right;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+  a:any-link {
+    color: #8D4C30;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: black;
+  }
+
+  li {
+    display: inline;
+    
+  }
+
+  /* buttons */
+  #click {
+    background-color: #8D4C30;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  /* box the dog profiles are displayed in*/
+  .doggo-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.doggo img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.doggo p {
+    margin: 5px 0;
+    
+}
+
+/* determines how many profiles show in a line depending on screen size, adds styling to the box such as a border and background image */
+.doggo-container div { 
+  width: calc(100%/5); 
+  height: 90%; 
+  text-align: center; 
+  margin: 10px 10px; 
+  border: 1px solid #ccc; 
+  padding: 1rem 1rem 1rem 1rem;
+  background-image: url('imgs/pawpaw.jpg');
+  background-size: 45rem;
+  background-repeat: repeat;
+  } 
+
+  #factSection {
+    padding: 3% 30% 3% 30%;
+    text-align: center;
+     }
+
+ /* adding animation to the way the text comes on to the page so it looks less static */
+  .fact-container {
+    color: #8D4C30;
+    font-weight: 400;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .fade-in {
+    opacity: 1;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+
+  /* Styling for footer, made in 3 sections so I could arrange each parts position */
+  #footer-left {
+    float: left;
+    width: 20%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  
+  #footer-centre {
+  float: left;
+  padding-top: 5rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  width: 20%;
+  text-align: left;
+  }
+  
+  #footer-right {
+    float: right;
+    width: 100%;
+    }
+
+   /* Styling for dog of the day box */
+
+    #popUpContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  #popUp {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.4);
+      padding-top: 80px;
+      justify-content: center;
+      align-items: center;
+  }
+
+  #popUp .popup-content {
+      background-image: url(/imgs/pawpaw.jpg);
+      background-position: center;
+      margin: auto;
+      padding: 50px;
+      border: 1px solid #888;
+      width: 30%;
+      height: 50%;
+      text-align: center;      
+  }
+
+  #popUp .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+  #popUp .close:hover,
+  #popUp .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  }
+    
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1024px) {
+  #header-left, #header-right {
+    width: 100%;
+    text-align: center;
+    word-spacing: 1rem;
+    padding-top: 1rem;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  .look-dog {
+    background-image: url('imgs/pawpaw.jpg');
+    background-size: cover;
+    background-position-x: center; 
+    padding:1rem;
+    text-align: center;
+  }
+
+  .doggo-container div {
+    width: calc(100% / 2);
+  }
+
+  #factSection {
+    padding: 3% 10%;
+  }
+
+  #footer-left, #footer-right {
+    width: 100%;
+  }
+
+  #footer-centre {
+    width: auto;
+    text-align: center;
+  }
+
+  #popUp .popup-content {
+    width: 50%;
+    height: auto;
+    padding: 40px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .doggo-container div {
+    width: 100%;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  #click {
+    padding: 10px 20px;
+    font-size: 8px;
+  }
+
+  #popUp .popup-content {
+    width: 70%;
+    height: auto;
+    padding: 30px;
+  }
+
+  #popUp .close {
+    font-size: 24px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  nav {
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #header-left {
+    justify-content: center;
+  }
+
+  .look-dog, .bones {
+    padding: 0.2rem;
+    background-image: url('imgs/pawpaw.jpg');
+  }
+
+  #popUp .popup-content {
+    width: 70%;
+    height: auto;
+    padding: 20px;
+  }
+
+  #popUp .close {
+    font-size: 20px;
+  }
+}

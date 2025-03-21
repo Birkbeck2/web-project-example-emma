@@ -1,0 +1,177 @@
+[ 
+ {  
+    "name": "Crisp", 
+     "age": 3,
+      "sex": "Male",
+      "personality": ["Cheeky", "Greedy", "Smelly"], 
+      "breed": "French Bulldog",
+      "info": "Would be suited to a home with no kids, but would enjoy the company of another cat or dog",
+      "location": "Luton",
+      "image": "imgs/samuel-charron-VLCIceb-Hw0-unsplash.jpg"
+ },
+  { 
+    "name": "Udon", 
+      "age": 3, 
+      "sex": "Female",
+      "personality": ["Shy", "Sweet", "Timid"], 
+      "breed": "Husky",
+      "info": "No kids, no cats",
+      "location": "Birmingham",
+      "image": "imgs/nataliia-kvitovska-t64RjBExKCQ-unsplash.jpg"
+  },
+  { 
+    "name": "Silver", 
+      "age": 8, 
+      "sex": "Male",
+      "personality": ["Playful", "Energetic", "Loud"], 
+      "breed": "Cane Corso",
+      "info": "Best suited to pawrents with experience of bigger woofs",
+      "location": "London",
+      "image": "imgs/davor-lovrencic-2lquYIGeC6k-unsplash.jpg"
+  },
+  { 
+    "name": "Piggy", 
+      "age": 5, 
+      "sex": "Female",
+      "personality": ["Playful", "Energetic", "Loud"], 
+      "breed": "Staffy",
+      "info": "Looking for a bestie so pawrent needs to be home more often than not",
+      "location": "Manchester",
+      "image": "imgs/roxy-penny-5nfHtMo4eko-unsplash.jpg"
+  },
+  { 
+    "name": "Monkey", 
+      "age": 12, 
+      "sex": "Male",
+      "personality": ["Cheeky", "Cuddly", "Velcro-dog"], 
+      "breed": "Lab",
+      "info": "Best suited to experienced Lab pawrents up for lots of cuddles on the sofa",
+      "location": "Luton",
+      "image": "imgs/noemi-macavei-katocz-c7bUIRBqapA-unsplash.jpg"
+  } ,
+  { 
+    "name": "Gentleman", 
+      "age": 5, 
+      "sex": "Female",
+      "personality": ["Naughty", "Chewer", "Barky"], 
+      "breed": "Chihuahua",
+      "info": "Naughty little girl who will chew your shoes, but ever so loving",
+      "location": "London",
+      "image": "imgs/marvin-hernandez-Kvg85QlYgiQ-unsplash.jpg"
+  } ,
+  { 
+    "name": "Walnut", 
+      "age": 7, 
+      "sex": "Female",
+      "personality": ["Cheerful", "Beggar", "Skatty"], 
+      "breed": "Staffy",
+      "info": "Happy girl who loves to be with people and other animals",
+      "location": "Birmingham",
+      "image": "imgs/roxy-penny-W8RG_YaR4_c-unsplash.jpg"
+   },
+    {
+      "name": "Rufus",
+      "age": 4,
+      "sex": "Male",
+      "personality": ["Loyal", "Energetic", "Friendly"],
+      "breed": "Border Collie",
+      "info": "Enjoys agility training and long walks in the countryside",
+      "location": "Birmingham",
+      "image": "imgs/mario-ame-BAD7D0YULZA-unsplash.jpg"
+    },
+    {
+      "name": "Lola",
+      "age": 2,
+      "sex": "Female",
+      "personality": ["Playful", "Affectionate", "Intelligent"],
+      "breed": "Poodle",
+      "info": "Very sociable and loves meeting new dogs at the park",
+      "location": "Manchester",
+      "image": "imgs/tuomas-harkonen-TvX7hnW0aNM-unsplash.jpg"
+    },
+    {
+      "name": "Rocky",
+      "age": 5,
+      "sex": "Male",
+      "personality": ["Courageous", "Loving", "Adventurous"],
+      "breed": "Boxer",
+      "info": "Needs an active family who enjoys outdoor activities",
+      "location": "London",
+      "image": "imgs/vidhey-pv-fZFAOhWETpM-unsplash.jpg"
+    },
+    {
+      "name": "Daisy",
+      "age": 3,
+      "sex": "Female",
+      "personality": ["Gentle", "Playful", "Cuddly"],
+      "breed": "Cavalier King Charles Spaniel",
+      "info": "Would make a wonderful lap dog and loves children",
+      "location": "London",
+      "image": "imgs/forest-simon-hheL7NOZ5Oo-unsplash.jpg"
+    },
+    {
+      "name": "Max",
+      "age": 6,
+      "sex": "Male",
+      "personality": ["Intelligent", "Loyal", "Active"],
+      "breed": "Australian Shepherd",
+      "info": "Thrives in a home with plenty of mental and physical stimulation",
+      "location": "Luton",
+      "image": "imgs/kara-eads-a_vtzmoMNI0-unsplash.jpg"
+      },
+      {
+        "name": "Rosie",
+        "age": 3,
+        "sex": "Female",
+        "personality": ["Playful", "Affectionate", "Energetic"],
+        "breed": "Labradoodle",
+        "info": "Enjoys playing fetch and cuddling on the couch.",
+        "location": "Manchester",
+        "image": "imgs/janosch-diggelmann-gnW4yR4Ucc8-unsplash.jpg"
+      },
+      {
+        "name": "Buddy",
+        "age": 7,
+        "sex": "Male",
+        "personality": ["Friendly", "Easygoing", "Loyal"],
+        "breed": "Golden Retriever",
+        "info": "Great with kids and other pets, loves swimming and hiking",
+        "location": "London",
+        "image":"imgs/shayna-douglas-rFao8fcvTdY-unsplash.jpg"
+      },
+      {
+        "name": "Lucy",
+        "age": 5,
+        "sex": "Female",
+        "personality": ["Sweet", "Gentle", "Calm"],
+        "breed": "Shih Tzu",
+        "info": "Prefers a quiet home environment with plenty of cuddles",
+        "location": "London",
+        "image":"imgs/shikhar-bhatnagar-q5mzaxLHtVk-unsplash.jpg"
+      },
+      {
+        "name": "Cooper",
+        "age": 2,
+        "sex": "Male",
+        "personality": ["Playful", "Energetic", "Curious"],
+        "breed": "Australian Shepherd",
+        "info": "Needs an active family who can keep up with his energy levels",
+        "location": "Luton",
+        "image":"imgs/andy-kogl-wzVRpgpRRSM-unsplash.jpg"
+      },
+      {
+        "name": "Sadie",
+        "age": 4,
+        "sex": "Female",
+        "personality": ["Intelligent", "Independent", "Alert"],
+        "breed": "Border Collie",
+        "info": "Excellent agility potential and thrives on mental challenges",
+        "location": "Birmingham",
+        "image":"imgs/pedro-sanz-hjcZmky9TsQ-unsplash.jpg"
+      }
+   ]
+
+  
+  
+  
+

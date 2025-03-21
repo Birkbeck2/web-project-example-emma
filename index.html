@@ -1,0 +1,196 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/4fae91469d.js" crossorigin="anonymous"></script>
+        <title>bubbles - adoption service</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="forms.css">
+
+    </head>
+    <body>
+        <header class="bones">
+            <!-- social media icons, I've linked the generic social pages as I've not build these for the brand specifically -->
+            <div id="header-left">
+                <a href="https://www.facebook.com/?locale=en_GB"><i class="fa-brands fa-facebook" alt="facebook logo icon and link"></a></i>
+                <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin" alt="linkedin logo icon and link"></i></a></i>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube" alt="youtube logo icon and link"></i></a></i>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram" alt="insta logo icon and link"></i></a></i>
+            </div>
+            <!-- Navigation bar, as these pages do not exsit I have instead linked some pet charities so they have functionalty -->
+            <div id="header-right">
+             <nav>
+            <ul>
+            <li class="nav-page"><a href="https://petsastherapy.org/information/support-us/donate">home</a></li>
+            <li class="nav-page"><a href="https://alldogsmatter.co.uk/get-involved/donate/">about</a></li>
+            <li class="nav-page"><a href="https://donate.battersea.org.uk/appeals/default/">pupwash</a></li>
+            <li class="nav-page"><a href="https://www.rspca.org.uk/getinvolved/donate/online">contact</a></li>
+        </ul>
+        </nav>
+    </div>
+    </header>
+<!-- First section of website with introduction to the pup wash, button using onclick to trigger a window in which user can schedule services-->
+    <section class="want-pup">
+        <h1>got a stinky pup?</h1>
+        <p> Stinky pup and low on time, fling them through the pup wash! <br>
+            Don’t forget, 50% of all booking fees are donated to our adoption service.</p>
+
+        <button id="click" class="btn-open-popup" onclick="togglePopup()">Book now</button>
+        
+              <!--Booking form-->
+            <div id="popupOverlay" class="overlay-container">
+                <div class="popup-box">
+                <form class="form-container">
+
+                 <!-- Booking form includes user input items so they can enter pup name, age and hair type, type of service required, human contact details and calendar. Thank you for booking pop up after information is submitted. Form also uses cancel form so user can click out of the popup -->
+                 <h1>doggo info</h1>   
+                 <label for="dog-name">doggo's name</label><br>
+                    <input type="text" id="dog-name" name="dog-name"><br>
+                    <label for="dog-name">doggo's age</label><br>
+                    <input type="text" id="dog-age" name="dog-age"><br>
+                    <br>
+                    <label for="service">doggo's hair type</label><br>
+                    <input type="radio" id="hair1" name="hair1">
+                    <label for="hair1">short haired</label><br>
+                    <input type="radio" id="hair2" name="hair2">
+                    <label for="hair2">long haired</label><br>
+                    <br>
+                    <label for="service">service required</label><br>
+                    <input type="radio" id="service1" name="service1">
+                    <label for="service1">self service</label><br>
+                    <input type="radio" id="service2" name="service2">
+                    <label for="service2">staff service</label><br>  
+                    <br>
+                    <h1>hooman info</h1>
+                    <label for="owner">name</label><br>
+                    <input type="text" id="h-name" name="h-name"><br>
+                    <label for="email">email</label><br>
+                    <input type="email" id="h-email" name="h-email"><br>
+                    <label for="number">number</label><br>
+                    <input type="tel" id="h-number" name="h-number"><br>
+
+                    <label for="date">date and time</label><br>
+                    <input type="date" id="date" name="date"><br>
+                    <input type="time" id="time" name="time"><br>
+                    <br>
+                    <!-- button has confirmation message and closes the form but also a cancel button whch closes the form -->
+                    <button id="click" type="submit" class="btn-close-popup" 
+                    onclick="bookingConfirm()">Submit Booking</button> <br>
+                    <button id="click" type="submit" class="btn-close-popup" 
+                    onclick="cancelForm()">Cancel</button>
+                    <h1 id="logo">bubbles.</h1>
+                
+                  </form>
+            </div>
+        </div>
+        <!-- calling the buttons JS code which gives the above buttons functionality -->
+    <script src="buttons.js"></script>
+    </section>
+
+    <section class="look-dog">  
+        <div>
+            <h1>looking for a stinky pup?</h1>
+        <p> We are not only a dog washing service, we also look after some pretty wonderful pups in need of a furever home. <br> Take a look below at our current spa guests. Don't forget to register your interest if a doggo steals your heart</p>
+        <br>
+            <!-- Registration form, using onclick to trigger an alert to thank user for registering -->
+            <form id="register">
+                <form action="">   
+                <label for="fname">full name</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">email address</label><br>
+                <input type="email" id="email" name="email">
+        
+                <h1 id="form"> i am interested in.. </h1>
+                <input type="checkbox" id="Fostering" name="Fostering" value="Fostering">
+                <label for="option1">fostering</label><br>
+                <input type="checkbox" id="Adoption" name="Adoption" value="Adoption">
+                <label for="option2">adoption</label><br>
+                <br>
+                <button id="click" type="submit"  
+                    onclick="registerConfirm()">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Add 'did you know section' to display random dog facts -->
+   <section id="factSection">
+    <h1> did you know..</h1>
+    <div id="factContainer" class="fact-container">
+    </div>
+    </section>
+    <script src="facts.js"></script>
+
+     <!-- Dog of the day modal box pop up -->
+     <div class="dogOfTheDay"></div>
+    
+     <div id="popUp" class="popUpDog">
+         
+         <div class="popup-content">
+             <span class="close">&times;</span>
+             <h1>bubble's dog of day </h1>
+             <div id="dogOfTheDay"></div>
+             <p> If you are intersted in this sweet doggo, don't forget to register using the form on the home page :) </p>
+             <p> &#9829; </p>
+         </div>
+     </div>
+   
+    <!-- filter for dog profiles populated by data from JSON -->
+        
+        <br>
+        <h1 id="title">looking for any paw in particular?</h1>
+        <div>
+            <label for="locationFilter">Location:</label>
+            <select id="locationFilter">
+                <option value="">All Locations</option>
+            </select>
+
+            <label for="breedFilter">Breed:</label>
+            <select id="breedFilter">
+                <option value="">All Breeds</option>
+            </select>
+
+            <label for="ageFilter">Age:</label>
+            <select id="ageFilter">
+                <option value="">All Ages</option>
+            </select>
+        </div>
+        <br>
+
+    <!-- Dog profiles  - aim is to be able to call info to display on HTML page. User should be able to filter data by location, breed and sex, then only selected profiles will be shown. Data is from custom made JSON file which is then converted using JS fetch -->
+
+    <div id="data" class="doggo-container">
+    </div>
+    <script src="doggos.js"></script>
+
+    <!-- Footer section -->
+
+    <footer class="footer">
+            
+            <div id="footer-left">
+             <h1>more about us..</h1>   
+             <!-- Was unable to change the icon colour in CSS, not sure why so have done it directly in the HTML -->
+            <i id="icon" class="fa-regular fa-calendar-check" style="color: #8D4C30" alt="calendar icon"></i>
+            <h2>booking</h2>
+            <p>For the self-service, no bookings are needed if you want to just drop by, but if you'd like to book your pup in with one of team, we have appointments throughout the week.</p>
+            </div>
+            <div id="footer-centre">
+            <i id="icon" class="fa-regular fa-circle-user" style="color: #8D4C30" alt="user in a circle icon"></i>
+            <h2>staff</h2>
+            <p>Our professional groomers are always on site to give you a helping paw, should you need it but the facilities are all yours to use.. We provide everything from shampoo to towels!</p>
+        </div>
+    </div>
+    
+   <div id="footer-right">
+  
+    <h1 id="logo">bubbles.</h1>
+   </div>
+    </footer>
+    
+    </body>
+    </html>
